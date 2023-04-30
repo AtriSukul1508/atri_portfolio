@@ -1,205 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <!-- <img src="/images/logo.png" class="logo" alt="A"> -->
-                <p class="logo" ><span id="logo_name">[ATRI]</span><span id="logo_symbol">⊗</span><span id="logo_title">[S]</span></p>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#services">Services</a></li> -->
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Hello, I'm <span class="name_tag" >Atri Sukul</span><br><span class="work-description" >A Web dev and Machine learning enthusiast</span></h1>
-            </div>
+      <div class="container">
+        <nav>
+          <!-- <img src="/images/logo.png" class="logo" alt="A"> -->
+          <p class="logo">
+            <span id="logo_name">[ATRI]</span><span id="logo_symbol">⊗</span
+            ><span id="logo_title">[S]</span>
+          </p>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hello, I'm <span class="name_tag">Atri Sukul</span><br /><span
+              class="work-description"
+              >A Web dev and Machine learning enthusiast</span
+            >
+          </h1>
         </div>
+      </div>
     </div>
-<!-- -------------------------ABOUT-------------------------- -->
+    <!-- -------------------------ABOUT-------------------------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="/images/pikachu.png" >
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About[]. </h1>
-                    <p>I am currently pursuing Bachelors of Technology in Computer 
-                        Science & Engineering from Jalpaiguri Government Engineering College. I am currently in my 2nd year, always looking for to 
-                        learn and to contribute. My hobbies are Reading and Writing Articles.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Ui/UX</span></li>
-                            <li><span>Web Design</span></li>
-                            <li><span>Machine Learning</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Ui/UX</span><br>2Design</li>
-                            <li><span>Web</span><br>Design</li>
-                            <li><span>App</span><br>Design</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Ui/UX</span><br>3Design</li>
-                            <li><span>Web</span><br>Design</li>
-                            <li><span>App</span><br>Design</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/penguin.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About[].</h1>
+            <p>
+              I am currently pursuing Bachelors of Technology in Computer
+              Science & Engineering from Jalpaiguri Government Engineering
+              College. I am currently in my 2nd year, always looking for to
+              learn and to contribute. My hobbies are Reading and Writing
+              Articles.
+            </p>
+            <div class="tab-contents active-tab" id="skills">
+              <p class="tab-links skill-tab">Skills</p>
+              <div>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/html.png"
+                    alt="HTML"
+                /></span>
+                <span
+                  ><img width="50" height="50" src="./images/css.png" alt="CSS"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/js.png"
+                    alt="JavaScript"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/react.png"
+                    alt="ReactJS"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/node.png"
+                    alt="Node.js"
+                /></span>
+                <span
+                  ><img
+                    width="90"
+                    height="50"
+                    src="./images/express.png"
+                    alt="Express.js"
+                /></span>
+                <span
+                  ><img
+                    width="90"
+                    height="50"
+                    src="./images/pytorch.png"
+                    alt="PyTorch"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/python.png"
+                    alt="Python"
+                /></span>
+                <span
+                  ><img
+                    width="70"
+                    height="70"
+                    src="./images//dart.png"
+                    alt="Dart"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/mongo.png"
+                    alt="MongoDB"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/redux.png"
+                    alt="Redux"
+                /></span>
+                <span
+                  ><img width="50" height="50" src="./images/git.png" alt="Git"
+                /></span>
+                <span
+                  ><img width="50" height="50" src="./images/c.png" alt="C"
+                /></span>
+                <span
+                  ><img width="50" height="50" src="./images/cpp.png" alt="C++"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images//numpy.png"
+                    alt="NumPy"
+                /></span>
+                <span
+                  ><img
+                    width="80"
+                    height="80"
+                    src="./images//pandas.png"
+                    alt="Pandas"
+                /></span>
+                <span
+                  ><img
+                    width="50"
+                    height="50"
+                    src="./images/matplotlib.png"
+                    alt="Matplotlib"
+                /></span>
+              </div>
             </div>
+            <div class="tab-contents" id="experience">
+              <p class="tab-links">Experience</p>
+              <ul>
+                As a web development enthusiast, I have had the opportunity to
+                contribute my skills to various projects. I played an integral
+                role in the development of our college's official website and
+                also have contributed to the development of the websites for
+                various clubs including Pandulipi(Magazine club of our
+                college),SAAC(Space & Aeronautics Activity Center), and
+                Entrepreneurship and Development Cell. I have contributed as a mentor in JWOC
+                2023(https://jwoc.tech).
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <p class="tab-links">Education</p>
+              <ul>
+                Jalpaiguri Government Engineering College, B.Tech, Computer Science and Engineering (2021 - 2025)
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-<!-- ---------------------------services-------------------- -->
     <!-- ---------------------------portfolio-------------------- -->
 
     <div id="portfolio">
-        <div class="container">
-            <div class="subtitle">My work</div>
-            <div class="work-list">
-                <div class="work">
-                    <img src="/images/tur1ng_logo.png" alt="">
-                    <div class="layer">
-                        <h3>Online Blog app</h3>
-                        <p>Tur1ng</p>
-                        <p>It is a blog website which contains updated tags to bring you relevant information directly to your homepage. </p>
-                        <a href="https://github.com/AtriSukul1508/Njack_Hack_It_Out-Tur1ng-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            
-                <div class="work">
-                    <img src="/images/pet_saviour_logo.png" alt="">
-                    <div class="layer">
-                        <h3>Pet Blood Donation app</h3>
-                        <p>It is a website that collects the data regarding blood donation for pets</p>
-                        <a href="https://github.com/AtriSukul1508/pet-saviour"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
+      <div class="container">
+        <div class="subtitle">My work</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/tur1ng_logo.png" alt="" />
+            <div class="layer">
+              <h3>Online Blog app</h3>
+              <p>Tur1ng</p>
+              <p>
+                It is a blog website which contains updated tags to bring you
+                relevant information directly to your homepage.
+              </p>
+              <a
+                href="https://github.com/AtriSukul1508/Njack_Hack_It_Out-Tur1ng-"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
+
+          <div class="work">
+            <img src="/images/pet_saviour_logo.png" alt="" />
+            <div class="layer">
+              <h3>Pet Blood Donation app</h3>
+              <p>
+                It is a website that collects the data regarding blood donation
+                for pets
+              </p>
+              <a href="https://github.com/AtriSukul1508/pet-saviour"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <a href="#" class="btn">See more</a>
 
-
     <!-- -----------------------------Contact------------------------------- -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-
-                    <span id="msg"></span>
-
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>2025.cse11.atrisukul@example.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>8900519836</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
 
-        <div class="copyright">
-            <p>Made with  <i class="fa-solid fa-mug-hot"></i> by Atri</p>
-        </div>
-
-
-
-
-
+      <div class="copyright">
+        <p>Made with <i class="fa-solid fa-mug-hot"></i> by Atri</p>
+      </div>
     </div>
 
+
     <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxwCa7tubKoNf-ZUrbJ04DpDUjTt4Q6qsxzsrmJVjfv1MBDBFY8MjzqrsFVOM14wV4R/exec";
+      const form = document.forms["submit-to-google-sheet"];
 
-        var tabLinks = document.getElementsByClassName("tab-links");
-        var tabContents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tabLinks of tabLinks){
-                tabLinks.classList.remove("active-link");
-            }
-            for(tabContents of tabContents){
-                tabContents.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+      const msg = document.getElementById("msg");
 
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 2000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
 
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwCa7tubKoNf-ZUrbJ04DpDUjTt4Q6qsxzsrmJVjfv1MBDBFY8MjzqrsFVOM14wV4R/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    const msg = document.getElementById("msg");
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },2000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
-
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
+      function openmenu() {
         sidemenu.style.right = "0";
-    }
-    function closemenu(){
+      }
+      function closemenu() {
         sidemenu.style.right = "-200px";
-    }
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>
